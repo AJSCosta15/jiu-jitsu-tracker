@@ -1,0 +1,243 @@
+:root {
+    --bg-color: #0D1117;
+    --surface-color: #161B22;
+    --primary: #2383E2;
+    --alert: #E06C75;
+    --success: #98C379;
+    --accent: #C678DD;
+    --warn: #D19A66;
+    --text-primary: #FFFFFF;
+    --text-secondary: #8B949E;
+    --border-color: #30363D;
+    --font-family: 'Inter', sans-serif;
+    --radius: 8px;
+    --radius-pill: 9999px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    font-family: var(--font-family);
+    -webkit-font-smoothing: antialiased;
+}
+
+.app-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+h1 { font-size: 20px; font-weight: 600; }
+h3 { font-size: 13px; font-weight: 600; color: var(--text-secondary); margin-bottom: 16px; letter-spacing: 0.5px; }
+h4 { font-size: 13px; font-weight: 500; color: var(--text-secondary); }
+h5 { font-size: 11px; font-weight: 600; color: var(--text-secondary); margin-bottom: 8px; letter-spacing: 0.5px; }
+
+.text-blue { color: var(--primary) !important; }
+.text-purple { color: var(--accent) !important; }
+.text-green { color: var(--success) !important; }
+.text-red { color: var(--alert) !important; }
+.text-warn { color: var(--warn) !important; }
+
+.card {
+    background-color: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    padding: 20px;
+    margin-bottom: 24px;
+}
+
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.icon { font-size: 24px; }
+.header-btn {
+    background: transparent;
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    padding: 6px 12px;
+    font-family: var(--font-family);
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.header-btn:hover { background-color: rgba(255, 255, 255, 0.05); }
+
+.filters-card {
+    background-color: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    padding: 20px;
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.filter-group {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.filter-label {
+    min-width: 80px;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-secondary);
+}
+.pills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.pill {
+    background: transparent;
+    color: var(--text-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-pill);
+    padding: 4px 12px;
+    font-size: 13px;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.pill:hover { border-color: var(--text-secondary); }
+.pill.active {
+    background-color: var(--primary);
+    color: #fff;
+    border-color: var(--primary);
+}
+
+.status-indicator {
+    text-align: center;
+    padding-top: 12px;
+    font-size: 13px;
+    color: var(--text-secondary);
+}
+
+.goals-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+.gauge-container {
+    position: relative;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+}
+.gauge-center {
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+#goal-percent { font-size: 36px; font-weight: 700; line-height: 1; }
+
+.goal-stats-column {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.mini-card {
+    margin-bottom: 0px; 
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.mini-card-icon { font-size: 20px; }
+.red-dot {
+    width: 12px; height: 12px;
+    background-color: var(--alert);
+    border-radius: 50%;
+}
+.mini-card-content span { font-size: 14px; font-weight: 600; color: var(--text-primary); }
+
+.projection-card { align-items: flex-start; }
+.projection-card .mini-card-content { flex: 1; }
+.proj-bar-container {
+    width: 100%;
+    height: 6px;
+    background-color: var(--border-color);
+    border-radius: 999px;
+    margin-top: 6px;
+    overflow: hidden;
+}
+.proj-bar-fill {
+    height: 100%;
+    background-color: var(--primary);
+    width: 0%;
+    border-radius: 999px;
+    transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 16px;
+    margin-bottom: 24px;
+}
+.kpi-card {
+    background-color: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.kpi-value { font-size: 28px; font-weight: 700; }
+.kpi-unit { font-size: 14px; font-weight: 500; }
+
+.charts-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+.canvas-wrapper { position: relative; height: 250px; width: 100%; }
+
+.table-section { padding: 24px; }
+.table-responsive { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th { text-align: left; color: var(--text-secondary); font-weight: 500; padding: 12px 16px; border-bottom: 1px solid var(--border-color); }
+td { padding: 12px 16px; border-bottom: 1px solid var(--border-color); vertical-align: top; }
+tr:last-child td { border-bottom: none; }
+tr:hover { background-color: rgba(255, 255, 255, 0.02); }
+
+.tag-pill {
+    display: inline-flex;
+    align-items: center;
+    padding: 2px 8px;
+    border-radius: var(--radius-pill);
+    font-size: 12px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+.tag-blue { background-color: rgba(35, 131, 226, 0.2); color: #fff; }
+.tag-red { background-color: rgba(224, 108, 117, 0.2); color: #fff; }
+.tag-purple { background-color: rgba(198, 120, 221, 0.2); color: var(--accent); }
+.tag-grayblue { background-color: rgba(139, 148, 158, 0.2); color: white; }
+
+@media (max-width: 768px) {
+    .goals-grid, .charts-row { grid-template-columns: 1fr; }
+}

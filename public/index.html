@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jiu-Jitsu — Rastreador</title>
+    <!-- Use Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="top-header">
+            <div class="header-left">
+                <span class="icon">🥋</span>
+                <h1>Jiu-Jitsu — Rastreador</h1>
+            </div>
+            <button id="refresh-btn" class="header-btn">
+                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2v1z"/><path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466z"/></svg>
+                Atualizar
+            </button>
+        </header>
+
+        <!-- Filters Block -->
+        <section class="filters-card">
+            <div class="filter-group">
+                <span class="filter-label">ANO</span>
+                <div class="pills-container" id="filter-year">
+                    <button class="pill active" data-val="Todos">Todos</button>
+                    <button class="pill" data-val="2026">2026</button>
+                    <button class="pill" data-val="2025">2025</button>
+                </div>
+            </div>
+            
+            <div class="filter-group">
+                <span class="filter-label">MÊS</span>
+                <div class="pills-container" id="filter-month">
+                    <button class="pill active" data-val="Todos">Todos</button>
+                    <!-- Months will be populated by JS or hardcoded -->
+                    <button class="pill" data-val="01">Jan</button>
+                    <button class="pill" data-val="02">Fev</button>
+                    <button class="pill" data-val="03">Mar</button>
+                    <button class="pill" data-val="04">Abr</button>
+                    <button class="pill" data-val="05">Mai</button>
+                    <button class="pill" data-val="06">Jun</button>
+                    <button class="pill" data-val="07">Jul</button>
+                    <button class="pill" data-val="08">Ago</button>
+                    <button class="pill" data-val="09">Set</button>
+                    <button class="pill" data-val="10">Out</button>
+                    <button class="pill" data-val="11">Nov</button>
+                    <button class="pill" data-val="12">Dez</button>
+                </div>
+            </div>
+
+            <div class="filter-group">
+                <span class="filter-label">MODALIDADE</span>
+                <div class="pills-container" id="filter-modality">
+                    <button class="pill active" data-val="Todos">Todos</button>
+                    <button class="pill" data-val="Gi">Gi</button>
+                    <button class="pill" data-val="No-Gi">No-Gi</button>
+                </div>
+            </div>
+
+            <div class="status-indicator">
+                <span id="sync-status">⏳ Aguardando sincronização...</span>
+            </div>
+        </section>
+
+        <!-- Goal Grid -->
+        <section class="goals-grid">
+            <div class="card gauge-card">
+                <h3>META ANUAL</h3>
+                <div class="gauge-container">
+                    <canvas id="gauge-chart"></canvas>
+                    <div class="gauge-center">
+                        <span id="goal-percent">0%</span>
+                        <span class="subtext" id="goal-text">0 / 130</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="goal-stats-column">
+                <div class="card mini-card">
+                    <div class="mini-card-icon" id="pace-icon">🔴</div>
+                    <div class="mini-card-content">
+                        <h4>Status do Ritmo</h4>
+                        <span id="pace-status">-- treinos atrás</span>
+                    </div>
+                </div>
+                <div class="card mini-card projection-card">
+                    <div class="mini-card-icon">⚡</div>
+                    <div class="mini-card-content">
+                        <h4>Projeção</h4>
+                        <span id="projection">-- treinos</span>
+                        <div class="proj-bar-container">
+                            <div class="proj-bar-fill" id="proj-bar"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mini-card">
+                    <div class="mini-card-icon">📅</div>
+                    <div class="mini-card-content">
+                        <h4>Para Bater a Meta</h4>
+                        <span id="weekly-req">-- treinos/semana</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Metrics Grid -->
+        <section class="metrics-grid">
+            <div class="kpi-card">
+                <h5>TOTAL DE TREINOS</h5>
+                <div class="kpi-value text-blue" id="kpi-total">0</div>
+            </div>
+            <div class="kpi-card">
+                <h5>DURAÇÃO MÉDIA</h5>
+                <div class="kpi-value text-purple" id="kpi-avg-duration">0 <span class="kpi-unit">min</span></div>
+            </div>
+            <div class="kpi-card">
+                <h5>HORAS TOTAIS</h5>
+                <div class="kpi-value text-green" id="kpi-hours">0</div>
+            </div>
+            <div class="kpi-card">
+                <h5>ALTA INTENSIDADE</h5>
+                <div class="kpi-value text-red" id="kpi-high-intensity">0</div>
+            </div>
+            <div class="kpi-card">
+                <h5>TREINOS GI</h5>
+                <div class="kpi-value text-blue" id="kpi-gi">0</div>
+            </div>
+            <div class="kpi-card">
+                <h5>TREINOS NO-GI</h5>
+                <div class="kpi-value text-red" id="kpi-nogi">0</div>
+            </div>
+        </section>
+
+        <!-- Charts Row -->
+        <section class="charts-row">
+            <div class="card chart-card">
+                <h3>TREINOS POR MÊS</h3>
+                <div class="canvas-wrapper">
+                    <canvas id="bar-chart"></canvas>
+                </div>
+            </div>
+            <div class="card chart-card">
+                <h3>TIPOS DE TREINO</h3>
+                <div class="canvas-wrapper">
+                    <canvas id="donut-chart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <!-- Table Row -->
+        <section class="table-section card">
+            <div class="table-header-row">
+                <h3 id="table-title">TREINOS (0 EXIBIDOS)</h3>
+            </div>
+            <div class="table-responsive">
+                <table id="treinos-table">
+                    <thead>
+                        <tr>
+                            <th>DATA</th>
+                            <th>NOME</th>
+                            <th>MODALIDADE</th>
+                            <th>TIPO</th>
+                            <th>DURAÇÃO</th>
+                            <th>INTENSIDADE</th>
+                            <th>FOCO</th>
+                        </tr>
+                    </thead>
+                    <tbody id="treinos-body">
+                        <!-- Filled by JS -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

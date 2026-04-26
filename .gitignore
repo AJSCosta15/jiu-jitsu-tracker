@@ -1,0 +1,7 @@
+node_modules
+.env
+.env.example
+*.log
+notion_schema.json
+abrir_dashboard.bat
+public/temp_*
