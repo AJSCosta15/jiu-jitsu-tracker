@@ -1,0 +1,550 @@
+Plano de Retomada v2 — Carolina Duque | pág. 1
+PLANO DE RETOMADA
+Atualização v2 — pós-bioimpedância de 05/05/2026
+Carolina Duque  |  Atualizado em 06/05/2026
+Resumo das atualizações desta versão
+Este documento substitui o Plano de Retomada original (de 04/05/2026), integrando os resultados da nova
+bioimpedância (05/05) e a redefinição da rotina de treinos com a entrada da personal trainer em dois dos
+quatro dias de musculação. As principais mudanças são:
+ Bioimpedância: peso reduziu 0,5kg em relação a 22/03; massa muscular caiu apenas 0,5kg
+(recuperável); composição corporal preservada apesar da pausa de abril.
+ Estrutura de dias: três tipos novos (Personal / Sozinha / Cardio-Descanso), substituindo a estrutura
+anterior que assumia treino matutino.
+ Pré e pós-treino: nova lógica para treinos vespertinos (14h e 16h), com cardápio de variações expandido
+para reduzir erro de execução.
+ Suplementação: recomendação escalonada de novos suplementos (Tier 1, 2 e 3).
+ Cardio: protocolo ajustado conforme sua progressão real (40 min na semana 1).
+
+Plano de Retomada v2 — Carolina Duque | pág. 2
+1. Análise da bioimpedância (05/05/2026)
+Comparativo direto entre a última bioimpedância antes da pausa (22/03) e a atual (05/05), realizada após
+30 dias de inatividade quase total e alimentação fora do plano:
+ Indicador
+ 22/03
+ 05/05
+ Variação
+Peso
+63,1 kg
+62,6 kg
+−0,5 kg
+Gordura corporal
+18,2 kg / 28,9%
+18,3 kg / 29,3%
++0,1 kg / +0,4 p.p.
+Massa muscular
+41,9 kg
+41,4 kg
+−0,5 kg
+Músculo esquelético
+24,8 kg
+24,5 kg
+−0,3 kg
+Água corporal
+32,9 kg
+32,5 kg
+−0,4 kg
+Gordura visceral
+Grau 7
+Grau 7
+Estável
+TMB
+1.339 kcal
+1.326 kcal
+−13 kcal
+IMC
+24,6
+24,5
+−0,1
+Tronco (gordura)
+8,8 kg
+8,9 kg
++0,1 kg
+Leitura técnica
+Após 30 dias de pausa, o esperado seria um cenário de regressão significativa. O que se observa, na
+verdade, é um quadro preservado: o peso até reduziu (provável reflexo do efeito mantido do Rybelsus
+sobre o apetite), a gordura praticamente não subiu (+0,1 kg) e a perda muscular foi pequena (0,5 kg) e
+totalmente recuperável via efeito de memória muscular nas primeiras 4-6 semanas de retomada do treino
+de força.
+A redução da água corporal (−0,4 kg) é coerente com a hidratação cronicamente baixa do mês de abril e
+tende a se restabelecer rapidamente com a meta de 2,5-3L/dia. A gordura visceral manteve-se em grau 7
+— sem piora, mas ainda em patamar a ser reduzido nas próximas fases.
+Conclusão clínica: a sensação subjetiva de inchaço e roupas mais justas reflete principalmente
+flutuação hídrica e percepção, não um retrocesso real de composição corporal. Você não está
+recomeçando — está continuando, com um intervalo de 30 dias absorvido sem prejuízo significativo.
+
+Plano de Retomada v2 — Carolina Duque | pág. 3
+2. Estratégia nutricional atualizada
+A retomada se mantém em déficit moderado (≈200-300 kcal/dia nas primeiras duas semanas, subindo
+para 300-400 kcal a partir da semana 3). O objetivo prioritário desta fase é a reconstrução da rotina e da
+consistência, não a velocidade de perda de peso.
+Metas calóricas e de macronutrientes
+ Parâmetro
+ Dia
+Personal
+ Dia
+Sozinha
+ Dia Cardio
+/ Descanso
+Calorias
+~1.750 kcal
+~1.650 kcal
+~1.550 kcal
+Proteína
+~135 g
+~125 g
+~120 g
+Carboidrato
+~180 g
+~155 g
+~135 g
+Gordura
+~55 g
+~52 g
+~50 g
+Fibras (meta)
+≥ 25 g
+≥ 25 g
+≥ 25 g
+Água (meta)
+2,5-3 L
+2,5-3 L
+2,5-3 L
+Tipos de dia (configuração definitiva)
+ Tipo
+ Dias da semana
+ Configuração de treino
+Personal
+Terça e Quinta
+Musculação 16h (MMII pesado, com personal)
+Sozinha
+Quarta e Sexta
+Musculação 14h (sozinha)
+Cardio /
+Descanso
+Segunda, Sábado,
+Domingo
+Cardio na bike (15-40 min) ou descanso
+
+Plano de Retomada v2 — Carolina Duque | pág. 4
+3. Plano alimentar — Dia Personal
+Terça e quinta-feira  Treino MMII 16h com personal  Meta: ~1.750 kcal
+ Horário
+ Alimentos
+ Macros
+5h30-6h
+Quebra de jejum
+1 scoop Desincoffee + 100mL leite integral + 15g palatinose +
+1 ovo cozido
+(após 30min do Rybelsus)
+~230 kcal
+P:9 C:22 G:10
+8h-8h30
+Café da manhã
+1 fatia pão integral + 2 ovos mexidos + 30g cottage + café
+preto/Desincoffee
+~280 kcal
+P:22 C:18 G:14
+12h-12h30
+Almoço completo
+120g proteína + 100g arroz + 70g feijão + 150g+ vegetais + 1
+col. chá azeite + sobremesa (15g doce de leite ou 1 quad.
+choc. 70%)
+~510 kcal
+P:40 C:55 G:13
+15h
+Pré-treino LEVE
+→ Ver variações PT-L (Seção 6)
+1h antes do treino. Atual: 60g banana + 1 fatia pão integral +
+10g geleia sem açúcar + 1 café preto
+~165 kcal
+P:5 C:32 G:2
+17h30
+Pós-treino
+imediato
+→ Ver variações PI (Seção 7)
+Atual: shake — 1 scoop whey + 3g creatina + 60g banana +
+30g aveia + 200mL água gelada
+~300 kcal
+P:32 C:38 G:4
+19h30-20h
+Jantar leve
+Opções J5 (salada proteica), J6 (wrap de alface), J9
+(crepioca) ou omelete (3 ovos + 30g mussarela + folhas
+verdes)
+~280 kcal
+P:28 C:8 G:14
+TOTAL
+~1.765 kcal
+P:~136 C:~173 G:~57
+Por que essa estrutura: o pré-treino leve (carbo + mínima gordura/fibra) evita a sensação de
+empachamento que atrapalha agachamento e leg press. O pós-treino imediato (whey + creatina +
+carbo de absorção rápida) cobre a janela anabólica e a ressíntese de glicogênio do treino pesado. O
+jantar pode ser leve porque o pós-treino já entregou volume calórico significativo.
+
+Plano de Retomada v2 — Carolina Duque | pág. 5
+4. Plano alimentar — Dia Sozinha
+Quarta e sexta-feira  Treino 14h sozinha  Meta: ~1.650 kcal
+ Horário
+ Alimentos
+ Macros
+5h30-6h
+Quebra de jejum
+1 scoop Desincoffee + 100mL leite integral + 15g palatinose +
+1 ovo cozido
+~230 kcal
+P:9 C:22 G:10
+8h-8h30
+Café da manhã
+2 fatias pão integral + 2 ovos mexidos + 30g cottage + café
+preto
+~320 kcal
+P:24 C:30 G:12
+11h30-12h
+Pré-treino
+REFORÇADO
+→ Ver variações PT-R (Seção 8)
+Atual: 100g frango grelhado + 80g arroz branco + 100g
+vegetais cozidos + 1 col. chá azeite. Comer até 12h e treinar
+14h (2h de janela).
+~325 kcal
+P:30 C:38 G:8
+14h
+TREINO
+—
+15h30-16h
+Pós-treino
+REFORÇADO
+→ Ver variações PT-RP (Seção 9)
+Atual: shake (whey + creatina + 60g banana + 30g aveia) +
+sobremesa
+~370 kcal
+P:32 C:48 G:5
+19h-19h30
+Jantar
+Opções J1-J10 padrão (Cardápio de Variações)
+~380 kcal
+P:30-35 C:18-28 G:14
+TOTAL
+~1.625 kcal
+P:~125 C:~158 G:~50
+Por que essa estrutura: o pré-treino reforçado funciona como um almoço leve (proteína magra +
+carbo + vegetais cozidos), garantindo energia para o treino sem encher o estômago. A janela de 2h
+entre comer e treinar é suficiente para esvaziamento gástrico. O pós-treino acomoda whey + creatina
++ carbo + a sobremesa que ficou pendente do almoço.
+
+Plano de Retomada v2 — Carolina Duque | pág. 6
+5. Plano alimentar — Dia Cardio / Descanso
+Segunda, sábado e domingo  Cardio na bike OU descanso  Meta: ~1.550 kcal
+ Horário
+ Alimentos
+ Macros
+6h-7h
+Café da manhã
+1 scoop Desincoffee + 100mL leite integral + 15g palatinose +
+2 ovos mexidos + 1 fatia pão integral
+~390 kcal
+P:22 C:32 G:16
+12h-12h30
+Almoço
+120g proteína + 80g arroz branco + 70g feijão + 150g+
+vegetais + 1 col. chá azeite + sobremesa
+~480 kcal
+P:40 C:48 G:12
+15h-16h
+Lanche com
+whey
+150g iogurte natural caseiro + 1 scoop whey + 60g banana
+ou 70g uva + 5g chia/linhaça + 3g creatina
+~300 kcal
+P:31 C:22 G:8
+19h-19h30
+Jantar
+Opções J1-J10. Em dias de cardio à tarde, priorize opções
+mais leves (salada proteica, omelete, sopa)
+~375 kcal
+P:28-35 C:18-28 G:14
+TOTAL
+~1.545 kcal
+P:~121 C:~130 G:~50
+Em dias com cardio à tarde (18h): o lanche das 15h-16h já contém whey e cumpre função de pré-cardio. Não é
+necessário acrescentar refeição extra. Hidratação especialmente atenta nesses dias (30 min antes, durante e depois).
+
+Plano de Retomada v2 — Carolina Duque | pág. 7
+6. Variações de Pré-Treino LEVE (PT-L)
+Para o Dia Personal  15h, 1 hora antes do treino  Meta: ~150-180 kcal
+Características técnicas: carboidrato como base, proteína mínima, gordura quase ausente e baixa fibra. O objetivo é
+entregar energia rápida sem deixar o estômago cheio para o treino de MMII.
+PT-L1 (atual)
+60g banana prata + 1 fatia pão integral + 10g geleia sem açúcar + 1 café preto
+~165 kcal  P:5 C:32 G:2
+PT-L2 — Tapioca light
+Tapioca pequena (25g de goma) + 5g mel + 50g morango + 1 café preto
+~155 kcal  P:1 C:36 G:0
+PT-L3 — Cuscuz light
+50g cuscuz simples (umedecido com água, sem manteiga) + 60g banana prata + canela + 1 café
+preto
+~155 kcal  P:3 C:35 G:1
+PT-L4 — Pão sírio
+1 pão sírio integral pequeno + 10g geleia sem açúcar + 50g morango + 1 café preto
+~160 kcal  P:5 C:32 G:2
+PT-L5 — Banana com aveia
+80g banana prata + 20g aveia em flocos finos cozida em 100mL água + canela + 1 café preto
+~165 kcal  P:4 C:34 G:2
+PT-L6 — Torrada com geleia
+2 torradas integrais leves + 10g geleia sem açúcar + 50g morango + 1 café preto
+~150 kcal  P:4 C:30 G:2
+PT-L7 — Batata doce fria
+130g batata doce cozida (versão fria, da geladeira) com canela + 1 café preto
+~155 kcal  P:3 C:36 G:0
+O que evitar 1h antes do treino de MMII: pasta de amendoim, queijos gordos, ovos, abacate,
+oleaginosas em quantidade, salada crua e qualquer alimento com alto teor de fibra insolúvel. Tudo
+isso retarda a digestão e aumenta a sensação de empachamento durante exercícios que
+comprimem o tronco.
+
+Plano de Retomada v2 — Carolina Duque | pág. 8
+7. Variações de Pós-Treino IMEDIATO (PI)
+Para o Dia Personal  17h30, logo após o treino  Meta: ~290-320 kcal
+Características técnicas: 1 scoop whey Dux (30g) + 3g creatina como base fixa, combinados com carboidrato de
+absorção média/rápida. Pouca gordura para não retardar o esvaziamento gástrico e a chegada de aminoácidos ao
+músculo.
+PI-1 (atual) — Shake clássico
+1 scoop whey + 3g creatina + 60g banana + 30g aveia em flocos finos + 200mL água gelada (bater)
+~300 kcal  P:32 C:38 G:4
+PI-2 — Whey + batata doce
+1 scoop whey + 3g creatina (em 200mL água) + 100g batata doce cozida com canela
+~290 kcal  P:30 C:40 G:2
+PI-3 — Whey + pão e mel
+1 scoop whey + 3g creatina + 1 fatia pão integral + 5g mel + 60g banana
+~295 kcal  P:30 C:40 G:3
+PI-4 — Whey + tapioca
+1 scoop whey + 3g creatina + tapioca pequena (20g de goma) + 5g mel + 50g morango ou uva
+~285 kcal  P:30 C:38 G:2
+PI-5 — Whey + cuscuz
+1 scoop whey + 3g creatina + 100g cuscuz + 60g banana
+~310 kcal  P:32 C:45 G:2
+PI-6 — Vitamina cremosa
+1 scoop whey + 100mL leite integral + 60g banana + 20g aveia + 3g creatina + canela (bater)
+~320 kcal  P:34 C:38 G:6
+PI-7 — Iogurte proteico
+150g iogurte natural caseiro + 1 scoop whey misturado + 60g banana + 10g aveia + 3g creatina
+~310 kcal  P:38 C:30 G:7
+PI-8 — Whey + torrada
+1 scoop whey + 3g creatina + 2 torradas integrais leves + 5g mel + 60g banana
+~290 kcal  P:30 C:40 G:3
+
+Plano de Retomada v2 — Carolina Duque | pág. 9
+8. Variações de Pré-Treino REFORÇADO (PT-R)
+Para o Dia Sozinha  11h30-12h, ~2h antes do treino  Meta: ~320-360 kcal
+Características técnicas: proteína magra de fácil digestão + carboidrato branco/de baixa fibra + vegetais cozidos
+(não crus) + pouquíssima gordura. Reduzir feijão e folhas cruas (que aumentam o tempo de digestão e o desconforto
+abdominal). 2h de janela são suficientes para esvaziamento gástrico antes do treino das 14h.
+PT-R1 (atual) — Frango com arroz
+100g frango grelhado + 80g arroz branco + 100g vegetais cozidos (vagem, cenoura, abobrinha) + 1
+col. chá azeite
+~325 kcal  P:30 C:38 G:8
+PT-R2 — Patinho com cuscuz
+100g patinho moído refogado (cebola, alho, tomate) + 80g cuscuz + 100g vegetais cozidos + 1 col.
+chá azeite
+~340 kcal  P:32 C:36 G:9
+PT-R3 — Frango com macarrão
+100g frango desfiado + 80g macarrão integral cozido + molho de tomate caseiro (passata, sem creme
+nem queijo) + um punhado de rúcula
+~330 kcal  P:30 C:42 G:6
+PT-R4 — Filé com batata doce
+100g filé mignon grelhado + 100g batata doce cozida + 100g vegetais cozidos + 1 col. chá azeite
+~340 kcal  P:32 C:38 G:8
+PT-R5 — Frango com batata inglesa
+100g frango grelhado + 100g batata inglesa cozida + 100g vegetais cozidos (chuchu, cenoura,
+vagem) + 1 col. chá azeite
+~325 kcal  P:30 C:36 G:8
+PT-R6 — Wrap de pão sírio
+100g frango desfiado + 1 pão sírio integral + 50g alface americana + tomate em rodelas + 1 col. chá
+cream cheese light (ou maionese light)
+~340 kcal  P:32 C:34 G:9
+PT-R7 — Sopa com torrada
+100g frango desfiado + 80g batata + 60g cenoura + 60g chuchu (cozidos juntos como sopa) +
+temperos + 1 torrada integral leve
+~310 kcal  P:30 C:36 G:5
+PT-R8 — Macarrão com patinho
+100g patinho moído refogado + 80g macarrão integral + molho de tomate caseiro + 50g abobrinha
+cozida em cubos
+~340 kcal  P:32 C:38 G:8
+
+Plano de Retomada v2 — Carolina Duque | pág. 10
+9. Variações de Pós-Treino REFORÇADO (PT-RP)
+Para o Dia Sozinha  15h30-16h  Meta: ~370-400 kcal
+Características técnicas: 1 scoop whey + 3g creatina + carboidrato + a sobremesa que ficou pendente do "almoço"
+das 11h30. Funciona como pós-treino reforçado e complemento calórico do dia. Como é a refeição que segue o treino,
+absorção rápida ainda é desejável.
+PT-RP1 (atual) — Shake com sobremesa
+Shake (1 scoop whey + 3g creatina + 60g banana + 30g aveia + 200mL água) + sobremesa: 15g doce
+de leite OU 1 quad. chocolate 70%
+~370 kcal  P:32 C:48 G:5
+PT-RP2 — Whey + batata doce
+1 scoop whey + 3g creatina (em água) + 100g batata doce cozida + canela + sobremesa
+~360 kcal  P:30 C:50 G:3
+PT-RP3 — Whey + pão duplo
+1 scoop whey + 3g creatina + 2 fatias pão integral + 5g mel + 60g banana
+~390 kcal  P:32 C:55 G:4
+PT-RP4 — Whey + cuscuz
+1 scoop whey + 3g creatina + 100g cuscuz + 60g banana + sobremesa
+~390 kcal  P:32 C:55 G:3
+PT-RP5 — Whey + tapioca
+1 scoop whey + 3g creatina + tapioca (25g de goma) + 5g mel + 60g banana + sobremesa
+~370 kcal  P:30 C:52 G:3
+PT-RP6 — Vitamina cremosa
+1 scoop whey + 150mL leite integral + 60g banana + 30g aveia + 3g creatina + canela (bater) +
+sobremesa
+~400 kcal  P:34 C:52 G:7
+PT-RP7 — Bowl proteico
+150g iogurte natural caseiro + 1 scoop whey misturado + 30g granola sem açúcar + 60g banana
+fatiada + 3g creatina
+~390 kcal  P:38 C:48 G:8
+PT-RP8 — Crepioca proteica
+Crepioca (1 ovo + 1 col. sopa goma de tapioca, grelhar) + 5g mel + 60g banana + à parte: 1 scoop
+whey + 3g creatina em 200mL água + sobremesa
+~395 kcal  P:36 C:50 G:7
+
+Plano de Retomada v2 — Carolina Duque | pág. 11
+10. Suplementação atualizada
+Suplementação atual (manter)
+ Suplemento
+ Dose e horário
+Whey Protein Dux
+1 scoop (30g) — pós-treino imediato (PI no Dia Personal) ou pós-treino
+reforçado (PT-RP no Dia Sozinha) ou lanche com whey (Dia
+Cardio/Descanso)
+Creatina monoidratada
+3g/dia, junto ao whey. Sem necessidade de fase de loading na retomada
+Palatinose Vitafor
+15g na quebra de jejum (5h30-6h)
+Vitamina D
+2.000 UI/dia — conforme endocrinologista
+Exímia Fortalize Pro
+Conforme orientação da endocrinologista
+Sugestões de inclusão (escalonadas)
+Tier 1 — Para incluir agora (semana 1-2)
+ Suplemento
+ Dose e justificativa
+Ômega 3
+(EPA + DHA)
+2g/dia de óleo de peixe concentrado (preferir cápsulas com pelo menos 1g de EPA +
+0,5g de DHA na dose total). Tomar junto ao almoço ou jantar.
+Justificativa: ação anti-inflamatória que apoia o recovery muscular (especialmente
+útil com treino de MMII pesado), suporte cardiovascular (gordura visceral grau 7),
+apoio em humor e função cognitiva (relevante para o contexto emocional e estudos),
+contribuição secundária para saúde capilar.
+Magnésio
+glicinato
+200-300mg, tomado 30-60 min antes de dormir.
+Justificativa: a forma glicinato tem absorção superior à quelada ou citrato e não
+causa efeito laxativo. Apoia a qualidade do sono (seu maior fator limitante hoje),
+modula cortisol em situações de estresse, e contribui para a recuperação muscular.
+Em mulheres com sono fragmentado e treino de força, costuma ter impacto
+perceptível em 2-3 semanas.
+Tier 2 — Considerar a partir da semana 3-4
+ Suplemento
+ Dose e justificativa
+Beta-alanina
+3-5g/dia, dose dividida (ex: 1,5g manhã + 1,5g pré-treino) ou tudo no pré-treino.
+Justificativa: melhora performance em séries de força com 8-15 repetições — perfil
+exato dos seus treinos de MMII com a personal. Aumenta o buffering de íons H+ no
+músculo, retardando fadiga. Efeito acumulativo: precisa de 4-5 semanas de uso
+contínuo para saturar os estoques de carnosina muscular. Pode causar
+formigamento (parestesia) passageiro e inofensivo — dose dividida minimiza isso.
+Cafeína
+pré-treino
+200mg, 30-45 min antes do treino, apenas nos dias de MMII pesado (terça e quinta,
+junto ao pré-treino das 15h). Pode ser via café preto forte (2 xícaras) ou suplemento
+isolado.
+Justificativa: melhora performance em força e reduz percepção de esforço.
+Atenção: dado seu histórico de sono ruim, nunca consumir cafeína após as
+15h-16h para não comprometer ainda mais o sono.
+
+Plano de Retomada v2 — Carolina Duque | pág. 12
+Tier 3 — Opcional, conforme sintomas
+ Suplemento
+ Quando considerar
+Probiótico
+Lactobacillus + Bifidobacterium, 10-30 bilhões UFC/dia.
+Considerar apenas se o trânsito intestinal voltar a piorar após a retomada. Em março
+você havia melhorado para quase diário; aguardar 2-3 semanas para reavaliar antes
+de incluir.
+11. Protocolo de cardio (atualizado)
+Sua progressão real (semana 1): 40 min de cardio na segunda (05/05). O protocolo original sugeria
+15-20 min, mas a sua resposta foi melhor que o esperado — sinal de que o condicionamento aeróbio
+prévio (8 meses de cardio) não desapareceu. O protocolo abaixo foi recalibrado em função disso.
+Cronograma recalibrado
+ Semana
+ Frequência
+ Duração e intensidade
+Semana 1
+(05-11/05)
+3 dias
+(seg, sáb, dom)
+30-40 min em zona moderada (FC 110-130 bpm). Sem HIIT.
+Semana 2
+(12-18/05)
+3 dias
+35-45 min em zona moderada. Pode-se introduzir intervalos
+leves (2 min moderado / 1 min mais intenso / 2 min
+moderado).
+Semana 3
+(19-25/05)
+3-4 dias
+40-50 min. Retomar HIIT gradual (30s intenso / 2 min
+recuperação).
+Semana 4+
+(26/05 →)
+4-5 dias
+(incluindo dias de
+musculação se a
+energia permitir)
+40-60 min nos dias sem musculação; 20-30 min nos dias com
+musculação. HIIT completo (30s/2min ou 1min/2min). FC >
+130 bpm em cardio contínuo.
+Sinais para monitorar
+ Recuperação no dia seguinte: se na terça (treino com personal) as pernas estiverem exaustas ou as
+cargas muito mais difíceis do que o esperado, recuar o cardio da segunda para 25-30 min.
+ Sono e disposição: piora no sono ou cansaço crescente ao longo da semana = volume total alto demais
+para a fase de readaptação.
+ Frequência cardíaca: manter em zona moderada (FC 110-130 bpm) — "intensidade em que você
+consegue conversar com frases curtas, mas não cantar".
+ Hidratação: em dias de cardio mais longo, mirar 3L de água.
+Regra prática: se você termina o cardio sentindo que "podia ter feito mais", o tempo está adequado. Se
+termina sentindo que "mal aguentou", está exagerando.
+
+Plano de Retomada v2 — Carolina Duque | pág. 13
+12. Orientações transversais para esta fase
+Hidratação
+Meta de 2,5L/dia, idealmente 3L. Comece o dia com 500mL ao acordar (antes do Rybelsus). Mantenha
+uma garrafa de 500mL por perto e esvazie 5-6 vezes ao longo do dia. Em dias de cardio mais longo,
+priorize 3L.
+Sono
+Antes de otimizar a dieta, reestruturar o sono. Meta para esta fase: deitar até 22h, mesmo que não durma
+imediatamente. Antecipar o jantar (até 19h30) e encerrar telas/estudos até 21h são pré-requisitos. Se
+conseguir 6h30-7h, já é melhora significativa em relação às 5-6h históricas. O magnésio glicinato sugerido
+entra como apoio aqui.
+Pesagens e bioimpedância
+Próxima bioimpedância sugerida: final de maio (semana de 26-30/05), no mesmo horário e condições da
+atual (manhã, em jejum, hidratação normal no dia anterior). Pesagens de balança comum não são
+confiáveis nas primeiras 2-3 semanas de retomada (retenção hídrica pelo aumento de carbo e treino) —
+não use a balança como termômetro principal nesse período.
+Saúde emocional
+O que aconteceu em abril não é "fracasso" — é uma resposta humana a um contexto difícil. A
+bioimpedância de 05/05 confirma isso: o trabalho de 8 meses não se desfez. Manter a terapia semanal
+como prioridade. O exercício e a alimentação estruturada podem ser aliados desse processo, não mais
+uma fonte de cobrança.
+Próxima reavaliação
+Reavaliar o plano em ~3-4 semanas (final de maio), com:
+ Nova bioimpedância (ideal final de maio).
+ Avaliação subjetiva: nível de adesão, sensação de fome, energia nos treinos, qualidade do sono, humor.
+ Ajustes possíveis: aprofundar déficit (300-400 kcal/dia), revisar quantidades de carbo, calibrar lanches
+para Fase 2 (junho).
+AVISO: Este plano foi elaborado por inteligência artificial e não substitui acompanhamento presencial com nutricionista
+registrado(a) no CRN. Recomenda-se validação profissional, especialmente para a inclusão de novos suplementos.
+Qualquer ajuste em medicação (Rybelsus, vitamina D, Exímia Fortalize Pro) deve ser discutido exclusivamente com a
+endocrinologista responsável.
+Documento atualizado em 06/05/2026 com base na bioimpedância de 05/05/2026, no relato de cardio realizado em
+05/05/2026 e na nova configuração de treinos com personal trainer.
+
