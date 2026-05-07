@@ -23,10 +23,12 @@ O aplicativo adapta o cardápio automaticamente para três cenários:
 -   **Dia Sozinha (Qua/Sex)**: Treino às 14h com pré-treino reforçado.
 -   **Cardio/Descanso (Seg/Sab/Dom)**: Distribuição equilibrada de macros para dias de menor intensidade.
 
-## ✅ Últimas Atualizações (Maio/2026)
--   **Módulo Palatinose**: Integração de pré-treinos de baixo índice glicêmico para evitar picos de insulina (especialmente relevante para uso de Rybelsus).
--   **Flexibilização do Café da Manhã**: Remoção da obrigatoriedade do ovo cozido às 5h30, substituído por variações flexíveis (QJ-1 a QJ-6) com cottage, geleia, pasta de amendoim ou versões líquidas.
--   **Ajuste de Macros**: Recalibragem das metas de proteínas e carboidratos baseada na nova bioimpedância de 05/05/2026.
+## ✅ Últimas Atualizações (07/05/2026)
+-   **Plano de Retomada v3.1**: Consolidação do café da manhã (7h-7h30) após o Rybelsus, eliminando a quebra de jejum separada.
+-   **Ajuste de Palatinose**: Realocação para o pré-treino LEVE apenas nos Dias Personal (terças e quintas).
+-   **Novas Variações**: Expansão do cardápio com grupos AL (Almoço), J (Jantar) e S (Sobremesa), além de novas frutas e granola zero açúcar.
+-   **Substituição Sensorial**: Leite integral substituído por desnatado; aveia em flocos por farinha de aveia em shakes para melhor textura.
+-   **Suplementação Tiering**: Inclusão de Ômega 3 e Magnésio Glicinato no Tier 1 para melhorar recuperação e sono.
 
 ---
-*Documentação gerada pelo Antigravity em 06/05/2026.*
+*Documentação gerada pelo Antigravity em 07/05/2026.*
