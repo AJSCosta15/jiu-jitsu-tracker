@@ -1,16 +1,16 @@
 :root {
-    --bg-color: #0D1117;
-    --surface-color: #161B22;
-    --primary: #2383E2;
-    --alert: #E06C75;
-    --success: #98C379;
-    --accent: #C678DD;
-    --warn: #D19A66;
-    --text-primary: #FFFFFF;
-    --text-secondary: #8B949E;
-    --border-color: #30363D;
+    --bg-dark: #07080A;
+    --bg-surface: #111317;
+    --border-dim: #1B1E24;
+    --cyan-glow: #00F0FF;
+    --lime-glow: #CCFF00;
+    --red-sport: #FF3B30;
+    --orange-sport: #FF9500;
+    --text-light: #F5F6F8;
+    --text-muted: #7E8B9B;
     --font-family: 'Inter', sans-serif;
-    --radius: 8px;
+    --font-mono: 'Menlo', 'Monaco', 'Consolas', 'Courier New', monospace;
+    --radius: 12px;
     --radius-pill: 9999px;
 }
 
@@ -21,10 +21,26 @@
 }
 
 body {
-    background-color: var(--bg-color);
-    color: var(--text-primary);
+    background-color: var(--bg-dark);
+    color: var(--text-light);
     font-family: var(--font-family);
     -webkit-font-smoothing: antialiased;
+}
+
+/* Scrollbar customizada */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-track {
+    background: var(--bg-dark);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--border-dim);
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--text-muted);
 }
 
 .app-container {
