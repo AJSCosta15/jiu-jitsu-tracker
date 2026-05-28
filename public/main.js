@@ -1,5 +1,5 @@
 let globalResults = [];
-let gaugeChart, barChart, donutChart;
+let barChart, donutChart;
 
 document.addEventListener('DOMContentLoaded', () => {
     initCharts();
@@ -21,27 +21,6 @@ function initCharts() {
     Chart.defaults.color = '#8B949E';
     Chart.defaults.borderColor = '#30363D';
     Chart.defaults.font.family = 'Inter, sans-serif';
-
-    const ctxGauge = document.getElementById('gauge-chart').getContext('2d');
-    gaugeChart = new Chart(ctxGauge, {
-        type: 'doughnut',
-        data: {
-            labels: ['Completado', 'Restante'],
-            datasets: [{
-                data: [0, 100],
-                backgroundColor: ['#2383E2', '#161B22'],
-                borderWidth: 0,
-                cutout: '80%'
-            }]
-        },
-        options: {
-            rotation: 210,
-            circumference: 240,
-            responsive: true,
-            maintainAspectRatio: false,
-            plugins: { legend: { display: false }, tooltip: { enabled: false } }
-        }
-    });
 
     const ctxBar = document.getElementById('bar-chart').getContext('2d');
     barChart = new Chart(ctxBar, {
@@ -145,17 +124,32 @@ function updateAnnualGoalUI(results, targetYear) {
     const goal = 130;
     const currentTotal = results.length;
 
-    let fraction = currentTotal / goal;
-    let gaugeColor = '#E06C75'; // Red by default
-    if (fraction >= 0.75) gaugeColor = '#98C379'; // Green
-    else if (fraction >= 0.50) gaugeColor = '#2383E2'; // Blue
-    else if (fraction >= 0.25) gaugeColor = '#D19A66'; // Yellow
-
-    gaugeChart.data.datasets[0].backgroundColor = [gaugeColor, '#161B22'];
-    gaugeChart.data.datasets[0].data = [currentTotal, Math.max(0, goal - currentTotal)];
-    gaugeChart.update();
-    document.getElementById('goal-percent').innerText = Math.round((currentTotal/goal)*100) + '%';
+    const percent = Math.round((currentTotal / goal) * 100);
+    document.getElementById('goal-percent').innerText = `${percent}%`;
     document.getElementById('goal-text').innerText = `${currentTotal} / ${goal}`;
+
+    const yearEl = document.getElementById('goal-year');
+    if (yearEl) yearEl.innerText = String(targetYear);
+
+    // Anel SVG: circunferência de r=90 → 2π·90 ≈ 565.48
+    const CIRC = 565.48;
+    const ringFill = document.getElementById('ring-progress');
+    const ringExtra = document.getElementById('ring-progress-extra');
+    const fraction = currentTotal / goal;
+
+    if (ringFill) {
+        if (fraction <= 1) {
+            ringFill.style.strokeDashoffset = CIRC - (fraction * CIRC);
+            if (ringExtra) ringExtra.style.display = 'none';
+        } else {
+            ringFill.style.strokeDashoffset = 0;
+            if (ringExtra) {
+                ringExtra.style.display = 'block';
+                const extra = Math.min(1, fraction - 1);
+                ringExtra.style.strokeDashoffset = CIRC - (extra * CIRC);
+            }
+        }
+    }
 
     const now = new Date();
     let currentYear = now.getFullYear();
