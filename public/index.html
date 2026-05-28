@@ -16,12 +16,18 @@
         <header class="top-header">
             <div class="header-left">
                 <span class="icon">🥋</span>
-                <h1>Jiu-Jitsu — Rastreador</h1>
+                <h1>Jiu-Jitsu <span class="accent-text">Arena</span></h1>
             </div>
-            <button id="refresh-btn" class="header-btn">
-                <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2v1z"/><path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466z"/></svg>
-                Atualizar
-            </button>
+            <div class="header-right">
+                <div class="status-indicator">
+                    <span id="sync-led" class="led-dot led-teal"></span>
+                    <span id="sync-status" aria-live="polite">Aguardando sincronização...</span>
+                </div>
+                <button id="refresh-btn" class="header-btn">
+                    <svg width="14" height="14" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2v1z"/><path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466z"/></svg>
+                    Atualizar
+                </button>
+            </div>
         </header>
 
         <!-- Filters Block -->
@@ -29,80 +35,91 @@
             <div class="filter-group">
                 <span class="filter-label">ANO</span>
                 <div class="pills-container" id="filter-year">
-                    <button class="pill active" data-val="Todos">Todos</button>
-                    <button class="pill" data-val="2026">2026</button>
-                    <button class="pill" data-val="2025">2025</button>
+                    <button class="pill active" data-val="Todos" aria-pressed="true">Todos</button>
+                    <button class="pill" data-val="2026" aria-pressed="false">2026</button>
+                    <button class="pill" data-val="2025" aria-pressed="false">2025</button>
                 </div>
             </div>
             
             <div class="filter-group">
                 <span class="filter-label">MÊS</span>
                 <div class="pills-container" id="filter-month">
-                    <button class="pill active" data-val="Todos">Todos</button>
+                    <button class="pill active" data-val="Todos" aria-pressed="true">Todos</button>
                     <!-- Months will be populated by JS or hardcoded -->
-                    <button class="pill" data-val="01">Jan</button>
-                    <button class="pill" data-val="02">Fev</button>
-                    <button class="pill" data-val="03">Mar</button>
-                    <button class="pill" data-val="04">Abr</button>
-                    <button class="pill" data-val="05">Mai</button>
-                    <button class="pill" data-val="06">Jun</button>
-                    <button class="pill" data-val="07">Jul</button>
-                    <button class="pill" data-val="08">Ago</button>
-                    <button class="pill" data-val="09">Set</button>
-                    <button class="pill" data-val="10">Out</button>
-                    <button class="pill" data-val="11">Nov</button>
-                    <button class="pill" data-val="12">Dez</button>
+                    <button class="pill" data-val="01" aria-pressed="false">Jan</button>
+                    <button class="pill" data-val="02" aria-pressed="false">Fev</button>
+                    <button class="pill" data-val="03" aria-pressed="false">Mar</button>
+                    <button class="pill" data-val="04" aria-pressed="false">Abr</button>
+                    <button class="pill" data-val="05" aria-pressed="false">Mai</button>
+                    <button class="pill" data-val="06" aria-pressed="false">Jun</button>
+                    <button class="pill" data-val="07" aria-pressed="false">Jul</button>
+                    <button class="pill" data-val="08" aria-pressed="false">Ago</button>
+                    <button class="pill" data-val="09" aria-pressed="false">Set</button>
+                    <button class="pill" data-val="10" aria-pressed="false">Out</button>
+                    <button class="pill" data-val="11" aria-pressed="false">Nov</button>
+                    <button class="pill" data-val="12" aria-pressed="false">Dez</button>
                 </div>
             </div>
 
             <div class="filter-group">
                 <span class="filter-label">MODALIDADE</span>
                 <div class="pills-container" id="filter-modality">
-                    <button class="pill active" data-val="Todos">Todos</button>
-                    <button class="pill" data-val="Gi">Gi</button>
-                    <button class="pill" data-val="No-Gi">No-Gi</button>
+                    <button class="pill active" data-val="Todos" aria-pressed="true">Todos</button>
+                    <button class="pill" data-val="Gi" aria-pressed="false">Gi</button>
+                    <button class="pill" data-val="No-Gi" aria-pressed="false">No-Gi</button>
                 </div>
             </div>
 
-            <div class="status-indicator">
-                <span id="sync-status">⏳ Aguardando sincronização...</span>
-            </div>
+
         </section>
 
-        <!-- Goal Grid -->
-        <section class="goals-grid">
-            <div class="card gauge-card">
-                <h3>META ANUAL</h3>
-                <div class="gauge-container">
-                    <canvas id="gauge-chart"></canvas>
-                    <div class="gauge-center">
-                        <span id="goal-percent">0%</span>
-                        <span class="subtext" id="goal-text">0 / 130</span>
+        <!-- Hero de Meta -->
+        <section class="card hero-goal">
+            <div class="hero-ring-side">
+                <span class="hero-label">META <span id="goal-year">ANUAL</span></span>
+                <div class="ring-wrapper">
+                    <svg class="activity-ring" width="220" height="220" viewBox="0 0 220 220">
+                        <defs>
+                            <linearGradient id="grad-hero" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#2E8BFF" />
+                                <stop offset="100%" stop-color="#19E3C2" />
+                            </linearGradient>
+                        </defs>
+                        <circle class="ring-bg" cx="110" cy="110" r="90" fill="none" stroke="#23262F" stroke-width="18" />
+                        <circle id="ring-progress" class="ring-fill" cx="110" cy="110" r="90" fill="none"
+                                stroke="url(#grad-hero)" stroke-width="18" stroke-linecap="round"
+                                stroke-dasharray="565.48" stroke-dashoffset="565.48" transform="rotate(-90 110 110)" />
+                        <circle id="ring-progress-extra" class="ring-fill" cx="110" cy="110" r="90" fill="none"
+                                stroke="#7C5CFF" stroke-width="18" stroke-linecap="round"
+                                stroke-dasharray="565.48" stroke-dashoffset="565.48" transform="rotate(-90 110 110)"
+                                style="display: none;" />
+                    </svg>
+                    <div class="ring-center">
+                        <span id="goal-percent" class="ring-percent">0%</span>
+                        <span id="goal-text" class="ring-sub">0 / 130</span>
                     </div>
                 </div>
             </div>
-            
-            <div class="goal-stats-column">
-                <div class="card mini-card">
-                    <div class="mini-card-icon" id="pace-icon">🔴</div>
-                    <div class="mini-card-content">
+
+            <div class="hero-stats">
+                <div class="stat-block">
+                    <div class="stat-icon" id="pace-icon">🟡</div>
+                    <div class="stat-body">
                         <h4>Status do Ritmo</h4>
-                        <span id="pace-status">-- treinos atrás</span>
+                        <span id="pace-status">-- treinos</span>
                     </div>
                 </div>
-                <div class="card mini-card projection-card">
-                    <div class="mini-card-icon">⚡</div>
-                    <div class="mini-card-content">
-                        <h4>Projeção</h4>
+                <div class="stat-block">
+                    <div class="stat-icon">⚡</div>
+                    <div class="stat-body">
+                        <h4>Projeção Anual</h4>
                         <span id="projection">-- treinos</span>
-                        <div class="proj-bar-container">
-                            <div class="proj-bar-fill" id="proj-bar"></div>
-                        </div>
+                        <div class="proj-bar-container"><div class="proj-bar-fill" id="proj-bar"></div></div>
                     </div>
                 </div>
-                <div class="card mini-card">
-                    <div class="mini-card-icon">📅</div>
-                    <div class="mini-card-content">
+                <div class="stat-block">
+                    <div class="stat-icon">📅</div>
+                    <div class="stat-body">
                         <h4>Para Bater a Meta</h4>
                         <span id="weekly-req">-- treinos/semana</span>
                     </div>

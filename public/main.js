@@ -305,22 +305,28 @@ function updateFilteredUI(results) {
 }
 
 async function fetchTreinos() {
+    const led = document.getElementById('sync-led');
+    const statusText = document.getElementById('sync-status');
+    if (led) led.className = 'led-dot led-teal';
+
     try {
         const resp = await fetch('/api/treinos');
         const data = await resp.json();
-        
+
         if (data.fallback) {
-            document.getElementById('sync-status').innerText = `⚠️ Banco original não finalizado. Erro: ${data.message || 'Verifique .env'}`;
+            if (statusText) statusText.innerText = `⚠️ Modo Demonstração (Verifique .env)`;
+            if (led) led.className = 'led-dot led-red';
             return;
         }
 
         if (data.results) {
-            document.getElementById('sync-status').innerText = `✅ ${data.results.length} treinos carregados do Notion em tempo real!`;
+            if (statusText) statusText.innerText = `✅ ${data.results.length} treinos carregados do Notion`;
             globalResults = data.results;
             applyFilters();
         }
     } catch (e) {
         console.error("Error fetching treinos:", e);
-        document.getElementById('sync-status').innerText = `❌ Falha ao carregar dados do proxy local.`;
+        if (statusText) statusText.innerText = `❌ Falha ao carregar dados do proxy local.`;
+        if (led) led.className = 'led-dot led-red';
     }
 }
