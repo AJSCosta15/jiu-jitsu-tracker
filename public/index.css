@@ -264,11 +264,11 @@ h1 { font-family: var(--font-display); font-size: 24px; font-weight: 700; letter
 
 .charts-row {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.4fr 1fr;
     gap: 24px;
     margin-bottom: 24px;
 }
-.canvas-wrapper { position: relative; height: 250px; width: 100%; }
+.canvas-wrapper { position: relative; height: 240px; width: 100%; }
 
 .table-section { padding: 24px; }
 .table-responsive { overflow-x: auto; }

@@ -23,6 +23,9 @@ function initCharts() {
     Chart.defaults.font.family = 'Inter, sans-serif';
 
     const ctxBar = document.getElementById('bar-chart').getContext('2d');
+    const gradientBar = ctxBar.createLinearGradient(0, 0, 0, 240);
+    gradientBar.addColorStop(0, '#2E8BFF');
+    gradientBar.addColorStop(1, 'rgba(46, 139, 255, 0.10)');
     barChart = new Chart(ctxBar, {
         type: 'bar',
         data: {
@@ -30,14 +33,19 @@ function initCharts() {
             datasets: [{
                 label: 'Treinos',
                 data: [0,0,0,0,0,0,0,0,0,0,0,0],
-                backgroundColor: '#D19A66',
-                borderRadius: 4
+                backgroundColor: gradientBar,
+                borderRadius: 6,
+                borderWidth: 0
             }]
         },
         options: {
-            responsive: true, maintainAspectRatio: false,
+            responsive: true,
+            maintainAspectRatio: false,
             plugins: { legend: { display: false } },
-            scales: { y: { beginAtZero: true, grid: { color: '#30363D' } }, x: { grid: { display: false } } }
+            scales: {
+                y: { beginAtZero: true, grid: { color: '#23262F' } },
+                x: { grid: { display: false } }
+            }
         }
     });
 
@@ -48,13 +56,18 @@ function initCharts() {
             labels: ['Técnica', 'Sparring', 'Seminário'],
             datasets: [{
                 data: [0, 0, 0],
-                backgroundColor: ['#C678DD', '#98C379', '#8B949E'],
-                borderWidth: 2, borderColor: '#0D1117'
+                backgroundColor: ['#2E8BFF', '#19E3C2', '#7C5CFF'],
+                borderWidth: 3,
+                borderColor: '#13151B'
             }]
         },
         options: {
-            responsive: true, maintainAspectRatio: false,
-            plugins: { legend: { position: 'right', labels: { color: '#FFFFFF' } } }
+            responsive: true,
+            maintainAspectRatio: false,
+            cutout: '72%',
+            plugins: {
+                legend: { position: 'right', labels: { color: '#EDEFF4', boxWidth: 12, font: { size: 12, weight: '600' } } }
+            }
         }
     });
 }
@@ -195,9 +208,9 @@ function updateAnnualGoalUI(results, targetYear) {
         projEl.innerText = `${Math.round(projection)} treinos/ano`;
         
         let projFraction = projection / goal;
-        let pColor = 'var(--alert)';
-        if (projFraction >= 1) pColor = 'var(--success)';
-        else if (projFraction >= 0.9) pColor = 'var(--primary)';
+        let pColor = 'var(--danger)';
+        if (projFraction >= 1) pColor = 'var(--teal)';
+        else if (projFraction >= 0.9) pColor = 'var(--blue)';
         else if (projFraction >= 0.75) pColor = 'var(--warn)';
 
         if (projBar) {
