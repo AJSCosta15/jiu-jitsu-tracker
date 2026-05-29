@@ -244,7 +244,11 @@ function updateFilteredUI(results) {
     let typeCounts = { 'Técnica': 0, 'Sparring': 0, 'Seminário': 0 };
 
     if (total === 0) {
-        document.getElementById('treinos-body').innerHTML = `<tr><td colspan="7" style="text-align: center;">Nenhum treino encontrado nesta seleção.</td></tr>`;
+        document.getElementById('treinos-body').innerHTML = `
+            <tr><td colspan="7" style="text-align:center; padding:48px; color: var(--text-muted);">
+                <div style="font-size:28px; margin-bottom:12px;">🥋</div>
+                <div>Nenhum treino registrado neste período. Hora de vestir o kimono!</div>
+            </td></tr>`;
     } else {
         const rowsHTML = results.map(page => {
             const props = page.properties;
@@ -273,8 +277,8 @@ function updateFilteredUI(results) {
 
             let modClass = mod === 'Gi' ? 'tag-blue' : (mod ? 'tag-red' : '');
             let modIcon = mod === 'Gi' ? '🔵 Gi' : (mod ? '🔴 No-Gi' : '');
-            let typeClass = type === 'Técnica' ? 'tag-purple' : (type === 'Seminário' ? 'tag-grayblue' : 'tag-grayblue');
-            let intClass = int === 'Alta' ? 'text-red' : 'text-warn';
+            let typeClass = type === 'Técnica' ? 'tag-violet' : 'tag-grayblue';
+            let intClass = int === 'Alta' ? 'text-danger' : 'text-teal';
 
             return `
                 <tr>
