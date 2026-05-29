@@ -296,6 +296,23 @@ tbody tr:hover { background-color: var(--bg-elev-2); }
 .tag-violet { background-color: rgba(124, 92, 255, 0.16); color: var(--violet); }
 .tag-grayblue { background-color: rgba(138, 147, 166, 0.14); color: var(--text-muted); }
 
+/* Responsivo */
+@media (max-width: 1023px) {
+    .hero-goal { grid-template-columns: 1fr; justify-items: center; }
+    .hero-stats { width: 100%; }
+    .charts-row { grid-template-columns: 1fr; }
+}
 @media (max-width: 768px) {
-    .goals-grid, .charts-row { grid-template-columns: 1fr; }
+    .app-container { padding: 20px 16px; }
+    .filter-group { align-items: flex-start; flex-direction: column; gap: 8px; }
+    .metrics-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 420px) {
+    .ring-wrapper, .activity-ring { width: 180px; height: 180px; }
+    .ring-percent { font-size: 42px; }
+}
+/* Acessibilidade: movimento reduzido */
+@media (prefers-reduced-motion: reduce) {
+    * { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; }
+    .led-red { animation: none; }
 }
