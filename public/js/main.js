@@ -11,10 +11,12 @@ function localTodayISO() {
 }
 
 // Returns the loaded treinos, or null when they are unavailable (demo mode or error).
-async function loadTreinos(refresh) {
+// isCurrent() turns false when a newer load started, so stale responses never paint.
+async function loadTreinos(refresh, isCurrent) {
   setSyncStatus('ok');
   try {
     const data = await fetchTreinos(refresh);
+    if (!isCurrent()) return null;
     if (data.fallback) {
       setSyncStatus('demo', '⚠️ Modo Demonstração (Verifique .env)');
       return null;
@@ -25,6 +27,7 @@ async function loadTreinos(refresh) {
     renderTreinos(data.results);
     return data.results;
   } catch (e) {
+    if (!isCurrent()) return null;
     console.error('Error fetching treinos:', e);
     setSyncStatus('error', '❌ Falha ao carregar dados do proxy local.');
     return null;
@@ -42,12 +45,17 @@ function graduacoesState(result, treinos) {
   return { status: graduacoes.length ? 'ok' : 'empty', graduacoes, treinos };
 }
 
+let latestLoadId = 0;
+
 async function loadAll(refresh) {
+  const loadId = ++latestLoadId;
+  const isCurrent = () => loadId === latestLoadId;
   renderGraduacoes({ status: 'loading' }, localTodayISO());
   const [treinosResult, gradResult] = await Promise.allSettled([
-    loadTreinos(refresh),
+    loadTreinos(refresh, isCurrent),
     fetchGraduacoes(refresh),
   ]);
+  if (!isCurrent()) return;
   const treinos = treinosResult.status === 'fulfilled' ? treinosResult.value : null;
   renderGraduacoes(graduacoesState(gradResult, treinos), localTodayISO());
 }
