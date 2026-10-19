@@ -1,0 +1,211 @@
+/* Abas */
+[hidden] { display: none !important; }
+.tabs {
+    display: inline-flex;
+    gap: 4px;
+    padding: 4px;
+    background-color: var(--bg-elev);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-pill);
+}
+.tab {
+    background: transparent;
+    color: var(--text-muted);
+    border: none;
+    border-radius: var(--radius-pill);
+    padding: 7px 18px;
+    font-family: var(--font-display);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+}
+.tab:hover { color: var(--text); }
+.tab:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
+.tab[aria-selected="true"] {
+    background: linear-gradient(135deg, var(--blue), var(--violet));
+    color: #fff;
+    box-shadow: 0 0 12px rgba(46, 139, 255, 0.35);
+}
+
+/* Faixa (componente) */
+.belt {
+    --belt-color: #8A93A6;
+    --belt-h: 18px;
+    position: relative;
+    display: inline-flex;
+    justify-content: flex-end;
+    width: 132px;
+    max-width: 100%;
+    height: var(--belt-h);
+    border-radius: 3px;
+    background:
+        repeating-linear-gradient(90deg, rgba(0, 0, 0, 0.07) 0 2px, transparent 2px 5px),
+        linear-gradient(180deg, rgba(255, 255, 255, 0.18), transparent 45%, rgba(0, 0, 0, 0.22)),
+        var(--belt-color);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
+    flex-shrink: 0;
+}
+.belt--lg { --belt-h: 30px; width: 260px; border-radius: 4px; }
+.belt-tip {
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 3px;
+    width: 26%;
+    margin-right: 9%;
+    padding: 0 5px;
+    background-color: #0B0B0D;
+}
+.belt-tip--red { background-color: #C8102E; }
+.belt-stripe { width: 3px; background-color: #F4F4F2; }
+.belt--lg .belt-stripe { width: 5px; }
+.belt--lg .belt-tip { gap: 5px; padding: 0 8px; }
+.belt--branca { --belt-color: #ECECE8; outline: 1px solid #8A93A6; outline-offset: -1px; }
+.belt--cinza { --belt-color: #8E9196; }
+.belt--amarela { --belt-color: #F2C230; }
+.belt--laranja { --belt-color: #F07A22; }
+.belt--verde { --belt-color: #2FA05A; }
+.belt--azul { --belt-color: #1F5FD1; }
+.belt--roxa { --belt-color: #6B3FA0; }
+.belt--marrom { --belt-color: #6E4426; }
+.belt--preta { --belt-color: #16171B; outline: 1px solid #3A3E4A; outline-offset: -1px; }
+
+/* Graduações: estados */
+.grad-state {
+    background-color: var(--bg-elev);
+    border: 1px dashed var(--border);
+    border-radius: var(--radius);
+    padding: 40px 24px;
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 14px;
+}
+.grad-state--error { border-color: rgba(255, 77, 94, 0.45); color: var(--danger); }
+.grad-state--loading { animation: blink 1.2s infinite alternate; }
+
+/* Graduações: destaque */
+.grad-hero {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 24px;
+    padding: 28px;
+}
+.grad-hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 360px;
+    height: 360px;
+    background: radial-gradient(circle, rgba(124, 92, 255, 0.12), transparent 70%);
+    pointer-events: none;
+}
+.grad-hero-label, .tl-date {
+    font-family: var(--font-display);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: var(--text-muted);
+}
+.grad-hero-title {
+    font-family: var(--font-display);
+    font-size: clamp(28px, 6vw, 44px);
+    font-weight: 700;
+    line-height: 1.05;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+.grad-hero-grau { color: var(--teal); }
+.grad-hero-facts { display: flex; flex-wrap: wrap; gap: 8px; }
+.grad-hero-fact {
+    background-color: var(--bg-elev-2);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-pill);
+    padding: 6px 14px;
+    font-size: 13px;
+    color: var(--text-muted);
+}
+.grad-hero-fact strong { font-family: var(--font-display); font-weight: 600; color: var(--text); letter-spacing: 0.5px; }
+.grad-notice { font-size: 12px; color: var(--warn); margin: -6px 0 16px; }
+
+/* Graduações: linha do tempo */
+.timeline { list-style: none; position: relative; padding-left: 30px; }
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 8px;
+    top: 10px;
+    bottom: 10px;
+    width: 2px;
+    background: linear-gradient(180deg, var(--blue), var(--violet) 70%, var(--teal));
+    opacity: 0.55;
+}
+.tl-item { position: relative; animation: tl-in 0.5s ease both; animation-delay: calc(var(--i) * 90ms); }
+.tl-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    background-color: var(--bg-elev-2);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 16px 18px;
+    min-width: 0;
+    transition: border-color 0.2s ease;
+}
+.tl-card:hover { border-color: rgba(46, 139, 255, 0.4); }
+.tl-card::before {
+    content: '';
+    position: absolute;
+    left: -28px;
+    top: 18px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: var(--bg);
+    border: 3px solid var(--blue);
+    box-shadow: 0 0 10px rgba(46, 139, 255, 0.5);
+}
+.tl-title { font-size: 17px; letter-spacing: 0.5px; color: var(--text); margin: 0; overflow-wrap: anywhere; }
+.tl-meta { font-size: 13px; color: var(--text-muted); overflow-wrap: anywhere; }
+.tl-obs { font-size: 13px; color: var(--text); font-style: italic; overflow-wrap: anywhere; }
+.tl-gap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px 10px;
+    padding: 14px 0 18px 4px;
+    font-family: var(--font-display);
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    color: var(--text-muted);
+}
+.tl-gap-facts { display: inline-flex; flex-wrap: wrap; gap: 4px 8px; }
+.tl-gap-facts i { font-style: normal; color: var(--text-dim); }
+.tl-item:last-child .tl-gap { padding-bottom: 0; }
+.tl-live {
+    padding: 2px 10px;
+    border-radius: var(--radius-pill);
+    border: 1px solid rgba(25, 227, 194, 0.45);
+    color: var(--teal);
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+@keyframes tl-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+
+@media (max-width: 768px) {
+    .grad-hero { padding: 22px 18px; }
+    .belt--lg { width: 200px; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .tl-item, .grad-state--loading { animation: none; }
+}
