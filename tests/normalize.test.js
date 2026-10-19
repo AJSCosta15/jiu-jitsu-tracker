@@ -39,3 +39,10 @@ test('normalizeGraduacao com propriedades vazias usa padrões', () => {
   assert.deepStrictEqual(normalizeGraduacao({ id: 'g2', properties: {} }), { id: 'g2', titulo: '',
     data: '', faixa: '', grau: '', academia: '', professor: '', observacoes: '' });
 });
+
+test('datas com horario sao reduzidas para YYYY-MM-DD', () => {
+  const withTime = (start) => ({ id: 'x', properties: { 'Data': { date: { start } } } });
+  assert.strictEqual(normalizeTreino(withTime('2026-04-10T10:00:00.000-03:00')).data, '2026-04-10');
+  assert.strictEqual(normalizeGraduacao(withTime('2026-10-18T08:00:00.000-03:00')).data, '2026-10-18');
+  assert.strictEqual(normalizeTreino(withTime('2026-04-10')).data, '2026-04-10');
+});
