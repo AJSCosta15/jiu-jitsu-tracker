@@ -4,7 +4,15 @@ Painel de visualização de treinos de Jiu-Jitsu integrado com o Notion. Apresen
 
 ## 🛠️ Arquitetura
 *   **Front-end:** HTML5, CSS3 (Vanilla) e JavaScript (ES6). Bibliotecas auxiliares: Chart.js (via CDN).
-*   **Back-end:** Node.js com Express para servir os arquivos estáticos e agir como proxy para a API do Notion (@notionhq/client).
+*   **Back-end:** Node.js com Express para servir os arquivos estáticos e agir como proxy para a API do Notion (@notionhq/client). A lógica fica em `lib/` (`app.js`, `notion.js`, `normalize.js`, `cache.js`) e o `server.js` apenas liga tudo.
+*   **Front-end modular:** módulos ES em `public/js/` (cálculos testáveis, UI de Treinos e de Graduações, abas).
+
+## 🥋 Abas
+*   **Treinos:** métricas de consistência, rola acumulada, gráficos mensais e metas.
+*   **Graduações:** linha do tempo das faixas/graus com a quantidade de treinos e de horas entre cada marco. Acessível direto por `#graduacoes`.
+
+## ⚡ Cache
+As respostas do Notion ficam em cache por 5 minutos. Para forçar uma nova leitura, use `?refresh=1` na rota, por exemplo `/api/treinos?refresh=1`.
 
 ## 🚀 Como Rodar
 
@@ -18,19 +26,35 @@ Painel de visualização de treinos de Jiu-Jitsu integrado com o Notion. Apresen
    ```env
    PORT=3000
    NOTION_API_KEY=sua_chave_do_notion
-   NOTION_DATABASE_ID=seu_id_do_banco
+   NOTION_DATABASE_ID=seu_id_do_banco_de_treinos
+   NOTION_GRADUACOES_DB_ID=seu_id_do_banco_de_graduacoes
    ```
-5. Inicie o servidor:
+   A integração do Notion ("Jiu Jitsu Tracker") precisa estar conectada aos **dois** bancos (Treinos e Graduações): abra cada banco no Notion, menu `...` > Conexões e adicione a integração. Se `NOTION_GRADUACOES_DB_ID` estiver vazio, a aba Treinos continua funcionando e a aba Graduações mostra uma mensagem de fallback. Na Vercel, cadastre a mesma variável nas Environment Variables do projeto.
+5. (Opcional) Rode os testes:
+   ```bash
+   npm test
+   ```
+6. Inicie o servidor:
    ```bash
    npm run dev
    ```
-6. Acesse no navegador em `http://localhost:3000`.
+7. Acesse no navegador em `http://localhost:3000`.
 
 ---
 
 ## 📜 Histórico de Desenvolvimento
 
-### 28/05/2026
+### 19/10/2026
+*   **Ferramenta Utilizada:** Claude Code
+*   **O que foi tentado e falhou:** Integração do Notion sem acesso ao banco de Graduações: a integração "Jiu Jitsu Tracker" precisa ser compartilhada com esse banco (Conexões) para a aba carregar dados reais.
+*   **O que deu certo:** API normalizada com cache de 5 min (`?refresh=1`), erros limpos e nova rota `/api/graduacoes`; front reorganizado em módulos ES com cálculos testados e escape de HTML; nova aba **Graduações** com linha do tempo e treinos/horas entre marcos; nova variável `NOTION_GRADUACOES_DB_ID`; suíte de testes com `npm test` (node:test). Falha cruzada verificada: sem a variável, Treinos segue normal e Graduações exibe o fallback.
+
+### 28/05/2026 (Task 2)
+*   **Ferramenta Utilizada:** Antigravity IDE (Subagente Implementador)
+*   **O que foi tentado e falhou:** Nenhuma falha nos arquivos; o comando de terminal `git status` sofreu timeout devido à ausência de resposta manual do usuário no prompt de permissão do sandbox.
+*   **O que deu certo:** Implementação e estilização da **Task 2: Header com LED de Sync e Barra de Filtros**. Reestruturação do `<header>` no HTML para incluir o LED indicador de sincronização (`sync-led` e `sync-status`) e remoção do indicador antigo do card de filtros. Adição das novas regras no `index.css` para a barra de filtros (pills com gradiente no estado ativo e foco acessível) e controle dinâmico de cores do LED (`led-teal`/`led-red` para modo demo/erro) no `main.js`.
+
+### 28/05/2026 (Task 1)
 *   **Ferramenta Utilizada:** Antigravity IDE (Subagente Implementador)
 *   **O que foi tentado e falhou:** Nenhuma falha encontrada nesta etapa.
 *   **O que deu certo:** Implementação da **Task 1: Fundação de CSS — Tokens, Fontes e Base** do Redesign Arena. Adição da fonte Oswald ao HTML e substituição dos design tokens base, estilos do body, scrollbar e card genérico no index.css com a identidade visual da Arena.
